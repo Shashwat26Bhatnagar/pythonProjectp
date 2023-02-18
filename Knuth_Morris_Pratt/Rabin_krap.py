@@ -14,6 +14,6 @@ def rabin_krap(s:list,p:list,d=26,q=101):
             print("p found in s")
         #heart of the algorithm
         if i<n-m:
-            hash_s=(hash_s-ord(s[i]*h))%q
+            hash_s=(hash_s-ord(s[i])*h)%q
             hash_s=d*hash_s
             hash_s=(hash_s+ord(s[i+m]))%q
